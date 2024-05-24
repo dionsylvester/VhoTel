@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VhoTel - Reservation</title>
+    <link rel="stylesheet" href="Reservation.css">
+    <script defer src="Active-Bar.js"></script>
+    <script defer src="Reservation.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- INTRO PICTURE -->
+    <div class="intro-box">
+        <div class="intro-pic">
+            <img src="Resources/chill.jpg">
+        </div>
+        <div class="intro-pic">
+            <img src="Resources/front-desk.jpg">
+        </div>
+        <div class="intro-pic">
+            <img src="Resources/hallway.jpg">
+        </div>
+    </div>
+    
+    <div class="bodys">
+        <div class="container">
+            <div class="title">Reservation</div>
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter your name" id="nameInput">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" placeholder="Enter your email" id="emailInput">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="text" placeholder="Enter your phone number" id="phoneInput">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Type of Room</span>
+                        <input type="text" placeholder="Enter your room (1BR/2BR/JS/PS)" id="roomInput">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Check in Date</span>
+                        <input type="date" id="inInput">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Check out Date</span>
+                        <input type="date" id="outInput">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Promo Code</span>
+                        <input type="text" placeholder="Enter [0] to continue without promo" id="promoInput">
+                    </div>
+                </div>
+                <div class="payment-details">
+                    <input type="radio" name="payment" id="dot-1">
+                    <input type="radio" name="payment" id="dot-2">
+                    <input type="radio" name="payment" id="dot-3">
+                    <input type="radio" name="payment" id="dot-4">
+                    <input type="radio" name="payment" id="dot-5">
+                    <span class="payment-title">Payment Method</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="payment">BCA</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="payment">DANA</span>
+                        </label>
+                        <label for="dot-3">
+                            <span class="dot three"></span>
+                            <span class="payment">GoPay</span>
+                        </label>
+                        <label for="dot-4">
+                            <span class="dot four"></span>
+                            <span class="payment">OVO</span>
+                        </label>
+                        <label for="dot-5">
+                            <span class="dot five"></span>
+                            <span class="payment">ShopeePay</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="button" onclick="checkInputs()">Book Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- FOOTER -->
+    <section class="footer">
+        <div class="part-footer">
+            <div class="part">
+                <h2>VhoTel Jakarta Indonesia</h2>
+                <h1>Jl. Bujur Utama Kav. 15-20 Kemayoran, Jakarta Pusat 10620, Indonesia</h1>
+                <h1>Telp  : (+62) 21 123 4567</h1>
+                <h1>WA    : (+62) 812 3456 7890</h1>
+                <h1>Email : contact@vhotel.com</h1>
+            </div>
+
+            <div class="part">
+                <h2>Social Media</h2>
+                <a href="https://www.google.com/maps">Google Maps</a>
+                <a href="https://id-id.facebook.com/">Facebook</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://twitter.com/?lang=id">Twitter</a>
+            </div>
+        </div>
+
+        <div class="copyright">&copy; Copyright VhoTel Jakarta Indonesia 2023. All rights reserved</div>
+    </section>
+
+    <!-- BACK -->
+    <div class="back-button">
+        <a href="HomePage.html#back-explore">BACK</a>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">VhoTel</div>
+        <div class="ham-button">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="navigation-bar">
+            <ul>
+                <li><a href="HomePage.html#back-explore">HOME</a></li>
+                <li><a href="AboutUs.html">ABOUT US</a></li>
+                <li><a href="Rooms.html">ROOMS</a></li>
+                <li><a href="Facilities.html">FACILITIES</a></li>
+                <li><a class="active" href="Reservation.html">RESERVATION</a></li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>

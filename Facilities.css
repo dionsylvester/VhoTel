@@ -1,0 +1,518 @@
+/* Base Style */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    background: white;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+/* INTRO */
+.intro-box{
+    margin-top: 4.5rem;
+    display: flex;
+}
+
+.intro-pic{
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.intro-box .intro-pic img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.facilities{
+    font-size: 5rem;
+    color: #E28032;
+    padding-top: 0.5rem;
+    margin: 3rem;
+    position: relative;
+    text-align: center;
+}
+
+/* CONTENT */
+.title{
+    font-size: 3rem;
+}
+
+.hour{
+    margin-top: 0.8rem;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.desc{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 130%;
+}
+
+/* SPA */
+.spa{
+    background-color: #FFDB89;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem 2rem 3rem;
+    margin: 3rem auto 0 auto;
+    width: 70%;
+    border-radius: 15px;
+}
+
+.spa img{
+    width: auto;
+    height: 20rem;
+    border-radius: 12px;
+    margin-left: 2rem;
+}
+
+/* GYM */
+.gym{
+    background-color: #FFE589;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem 2rem 3rem;
+    margin: 5rem auto 0 auto;
+    width: 70%;
+    border-radius: 15px;
+}
+
+.gym img{
+    width: auto;
+    height: 20rem;
+    border-radius: 12px;
+    margin-right: 2rem;
+}
+
+/* SWIMMING POOLS */
+.swim{
+    background-color: #FFD389;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem 2rem 3rem;
+    margin: 5rem auto 0 auto;
+    width: 70%;
+    border-radius: 15px;
+}
+
+.swim img{
+    width: auto;
+    height: 20rem;
+    border-radius: 12px;
+    margin-left: 2rem;
+}
+
+/* CHILDREN PLAYGROUND */
+.playground{
+    background-color: #FFD189;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem 2rem 3rem;
+    margin: 5rem auto 0 auto;
+    width: 70%;
+    border-radius: 15px;
+}
+
+.playground img{
+    width: auto;
+    height: 20rem;
+    border-radius: 12px;
+    margin-right: 2rem;
+}
+
+/* LOBBY */
+.lobby{
+    background-color: #E9C79F;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem 2rem 3rem;
+    margin: 5rem auto 0 auto;
+    width: 70%;
+    border-radius: 15px;
+}
+
+.lobby img{
+    width: auto;
+    height: 20rem;
+    border-radius: 12px;
+    margin-left: 2rem;
+}
+
+/* LOUNGE */
+.lounge{
+    background-color: #FFDB89;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem 2rem 3rem;
+    margin: 5rem auto 0 auto;
+    width: 70%;
+    border-radius: 15px;
+}
+
+.lounge img{
+    width: auto;
+    height: 20rem;
+    border-radius: 12px;
+    margin-right: 2rem;
+}
+
+/* BUSINESS CENTER */
+.center{
+    background-color: #FFE589;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem 2rem 3rem;
+    margin: 5rem auto 0 auto;
+    width: 70%;
+    border-radius: 15px;
+}
+
+.center img{
+    width: auto;
+    height: 20rem;
+    border-radius: 12px;
+    margin-left: 2rem;
+}
+
+/* BACK */
+.back-button{
+    top: 6rem;
+    left: 2rem;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    border: 0.3rem solid #F7CB21;
+}
+
+.back-button a{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #F7CB21;
+}
+
+.back-button:hover{
+    background: grey;
+    border: 3px solid grey;
+    transition: 0.2s;
+}
+
+.back-button a:hover{
+    color: #fff;
+    transition: 0.2s;
+}
+
+/* NAVIGATION BAR */
+header{
+    position: fixed;
+    z-index: 1000;
+    height: 70px;
+    width: 100%;
+    top: 0;
+    padding: 0 100px;
+    display: flex;
+    background: #E28032;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    margin: 2rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.ham-button{
+    display: none;
+}
+
+.navigation-bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.navigation-bar ul li a{
+    display: block;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 8px 16px;
+    margin: 0 10px;
+    transition: 0.2s;
+}
+
+.navigation-bar ul li a:hover{
+    font-weight: 700;
+    color: #E28032;
+    background-color: #fff;
+}
+
+.navigation-bar ul li a.active{
+    font-weight: 700;
+    color: #E28032;
+    background: #fff;
+}
+
+/* FOOTER */
+.footer{
+    position: relative;
+    top: 150px;
+    background-color: #E28032;
+}
+
+.footer .part-footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.footer .part-footer .part{
+    position: relative;
+    flex: 1 1 15rem;
+    padding-bottom: 1rem;
+}
+
+.footer .part-footer .part h2{
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    border-bottom: 0.2rem solid #fff;
+}
+
+.footer .part-footer .part h1{
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.2rem 0;
+    margin-bottom: 0.2rem;
+}
+
+.footer .part-footer .part a{
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+}
+
+.footer .part-footer .part a:hover{
+    color: #E3E3E3;
+    text-decoration: underline;
+}
+
+.footer .copyright{
+    position: relative;
+    text-align: center;
+    margin-top: 0.8rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media(max-width: 1400px){
+    header{
+        padding: 0 20px;
+    }
+}
+
+@media(max-width: 1280px){
+    .spa-content{
+        justify-content: none;
+        margin-right: -20rem;
+        margin-top: 1rem;
+    }
+    .spa img{
+        height: 15rem;
+        width: auto;
+        position: sticky;
+    }
+    .gym-content{
+        justify-content: none;
+        margin-left: -22rem;
+        margin-top: 1rem;
+    }
+    .gym img{
+        height: 15rem;
+        width: auto;
+        margin: 0;
+    }
+    .swim-content{
+        justify-content: none;
+        margin-right: -20rem;
+        margin-top: 1rem;
+    }
+    .swim img{
+        height: 15rem;
+        width: auto;
+        position: sticky;
+    }
+    .playground-content{
+        justify-content: none;
+        margin-left: -22rem;
+        margin-top: 1rem;
+    }
+    .playground img{
+        height: 15rem;
+        width: auto;
+        margin: 0;
+    }
+    .lobby-content{
+        justify-content: none;
+        margin-right: -20rem;
+        margin-top: 1rem;
+    }
+    .lobby img{
+        height: 15rem;
+        width: auto;
+        position: sticky;
+    }
+    .lounge-content{
+        justify-content: none;
+        margin-left: -25rem;
+        margin-top: 1rem;
+    }
+    .lounge img{
+        height: 15rem;
+        width: auto;
+        margin: 0;
+    }
+    .center-content{
+        justify-content: none;
+        margin-right: -20rem;
+        margin-top: 1rem;
+    }
+    .center img{
+        height: 15rem;
+        width: auto;
+        position: sticky;
+    }
+    .title{
+        margin-top: 15rem;
+    }
+    header{
+        padding: 0 30px;
+    }
+    .ham-button{
+        display: block;
+        cursor: pointer;
+    }
+    .ham-button .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px 0;
+    }
+    .navigation-bar{
+        position: fixed;
+        height: 0;
+        width: 20vw;
+        top: 70px;
+        right: 0;
+        background: #E28032;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .navigation-bar.active{
+        height: 325px;
+    }
+    .navigation-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 25px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .navigation-bar.active ul{
+        opacity: 1;
+    }
+    .navigation-bar ul li a{
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 768px){
+    .spa-content{
+        margin-right: -17rem;
+        margin-top: -4rem;
+    }
+    .spa img{
+        height: 10rem;
+        width: auto;
+    }
+    .gym-content{
+        margin-left: -15rem;
+        margin-top: -4rem;
+    }
+    .gym img{
+        height: 10rem;
+        width: auto;
+        margin: 0;
+    }
+    .swim-content{
+        margin-right: -17rem;
+        margin-top: -4rem;
+    }
+    .swim img{
+        height: 10rem;
+        width: auto;
+    }
+    .playground-content{
+        margin-left: -15rem;
+        margin-top: -4rem;
+    }
+    .playground img{
+        height: 10rem;
+        width: auto;
+    }
+    .lobby-content{
+        margin-right: -17rem;
+        margin-top: -4rem;
+    }
+    .lobby img{
+        height: 10rem;
+        width: auto;
+    }
+    .lounge-content{
+        margin-left: -17rem;
+        margin-top: -4rem;
+    }
+    .lounge img{
+        height: 10rem;
+        width: auto;
+    }
+    .center-content{
+        margin-right: -17rem;
+        margin-top: -4rem;
+    }
+    .center img{
+        height: 10rem;
+        width: auto;
+    }
+    .footer .part-footer{
+        gap: 1rem;
+    }
+    .footer .part-footer .part{
+        flex: 1 1 10rem;
+    }
+    .footer .part-footer .part h2{
+        font-size: 1.5rem;
+    }
+    .footer .part-footer .part h1{
+        font-size: 0.8rem;
+    }
+    .footer .part-footer .part a{
+        font-size: 0.8rem;
+    }
+    .footer .copyright{
+        font-size: 0.8rem;
+    }
+}
