@@ -2,6 +2,7 @@
     "scripts": {
         "dev": "vite",
         "build": "npm run generate-html && vite build",
+        "generate-html": "mkdir -p dist && cp index.html dist/",
         "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
         "copy-index": "cp index.html dist/",
         "preview": "view preview",
