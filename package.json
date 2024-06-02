@@ -1,2 +1,6 @@
- "build": "npm run generate-html && vite build",
- "generate-html": "mkdir -p dist && cp index.html dist/"
+{
+    "scripts": {
+        "build": "npm run generate-html && vite build",
+        "generate-html": "mkdir -p dist && cp index.html dist/"
+    }
+}
